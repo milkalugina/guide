@@ -1,0 +1,769 @@
+@import "reset.css";
+
+@font-face {
+  font-family:GTWalsheimPro-Black;
+  src: url("../fonts/GTWalsheimPro-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family:GTWalsheimPro;
+  src: url("../fonts/GTWalsheimPro.otf") format("opentype");
+}
+
+@font-face {
+  font-family:GTWalsheimPro-UltraBold;
+  src: url("../fonts/GTWalsheimPro-UltraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family:GTWalsheimPro-Medium;
+  src: url("../fonts/GTWalsheimPro-Medium.otf") format("opentype");
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url('../img/header.png') no-repeat center top;
+  background-size: cover;
+  height: 900px;
+  font-family:GTWalsheimPro-Black;
+  text-align: right;
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 100px;
+  padding-top: 400px;
+  padding-right: 80px;
+}
+
+.header h2 {
+  color: #fff;
+  font-size: 50px;
+  padding-top: 10px;
+  padding-right: 80px;
+}
+
+.menu {
+  background-color: #ED4334;
+
+  font-family: GTWalsheimPro;
+  font-size: 35px;
+  position: fixed;
+  width: 1440px;
+  top: 0;
+  z-index: 1001;
+  opacity: 0.9;
+  padding: 15px 0;
+}
+
+/* отключение подчеркивания */
+ .menu ul li a {
+   text-decoration: none;
+   padding-left: 10px;
+ }
+
+/* свечение цветом при наведении */
+ .menu ul li a:hover {
+ 	color: rgba(50, 0, 0, 0.5);
+ }
+
+/* 100% при наведении */
+ .menu:hover {
+   opacity: 1;
+ }
+
+/* цвет посещенной иконки */
+.menu a:visited {
+  color: #fff;
+  opacity: 0.2;
+
+}
+
+/* высота меню */
+.menu nav ul {
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* меню в строку */
+.menu nav ul li {
+  display: inline;
+  margin-right: 5px;
+  padding: 2px;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.hello {
+  font-family:GTWalsheimPro;
+  height: 1710px;
+  background: url('../img/helloBegin.svg') no-repeat center top;
+  position: relative;
+  background-size: 1010px;
+    margin: 0 auto;
+}
+
+.ellipse1 {
+  background: url('../img/ellipse1.svg') no-repeat center top;
+  background-position: 70%, -20%;
+  position: relative;
+  left: 10%;
+  top: 38%;
+  height: 950px;
+  width: 950px;
+}
+
+.ellipse1 h2 {
+  font-family: GTWalsheimPro-Black;
+  letter-spacing: 2px;
+  font-size: 50px;
+  padding-left: 255px;
+  padding-top: 305px;
+  color: #52453B;
+}
+
+.ellipse1 p {
+  font-size: 40px;
+  line-height: 55px;
+  padding-top: 50px;
+  padding-left: 250px;
+  padding-right: 230px;
+  color: #52453B;
+}
+
+.helloEnd {
+  background: url(../img/helloEnd.svg)no-repeat bottom right;
+  width: 200px;
+  height: 200px;
+  padding-top: 550px;
+  padding-left: 610px;
+  background-size: 60%;
+}
+
+.to-know {
+  font-family: GTWalsheimPro;
+  position: relative;
+  width: 700px;
+  height: 500px;
+  top: -15px;
+  background-color: #74273A;
+  padding-top: 55px;
+  padding-left: 70px;
+  padding-right: 90px;
+  padding-bottom: 30px;
+  color: #FFEFDF;
+  margin: 0 auto;
+}
+
+.to-know h3 {
+  font-family:GTWalsheimPro-Medium;
+  letter-spacing: 3px;
+  font-size: 45px;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.to-know p {
+  padding-top: 36px;
+  line-height: 45px;
+  letter-spacing: 0.5px;
+  padding-left: 25px;
+  font-size: 36px;
+}
+
+.animation1 {
+  position: absolute;
+  top:30px;
+  padding-top: 250px;
+  padding-left: 600px;
+}
+
+.first {
+  height: 280px;
+  width: 250px;
+  animation: showreel-hover 1.6s infinite ease-in-out;
+  top:40px;
+}
+
+.animation2 {
+  position: absolute;
+  padding-left: 650px;
+  top: 0;
+  padding-top: 200px;
+}
+
+.second {
+  height: 280px;
+  width: 250px;
+  animation: showreel-hover 1s infinite ease-in-out;
+  top:40px;
+}
+
+.animation3 {
+  position: absolute;
+  padding-left: 760px;
+  top: 0;
+  padding-top: 200px;
+}
+
+.third {
+  height: 280px;
+  width: 250px;
+  animation: showreel-hover 1.5s infinite ease-in-out;
+  top:40px;
+}
+
+.to-learn {
+  background: url('../img/toLearn.svg')no-repeat bottom right;
+  height: 700px;
+  margin-top: 250px;
+  font-family: GTWalsheimPro;
+  text-align: right;
+  color: #fff;
+}
+
+.to-learn h3 {
+  font-size: 45px;
+  padding-top: 120px;
+  padding-right: 250px;
+  font-family:GTWalsheimPro-Medium;
+  letter-spacing: 3px;
+  font-size: 40px;
+}
+
+.to-learn p {
+  font-size: 36px;
+  padding-top: 20px;
+  padding-right: 250px;
+  padding-left: 450px;
+  line-height: 45px;
+  letter-spacing: 0.3px;
+  font-size: 36px;
+}
+
+.to-learn a {
+  color: #FFEDDB;
+  text-decoration: none;
+}
+
+.to-learn a:visited {
+  color: #CCB49C;
+}
+
+.animation4 {
+  position: absolute;
+  margin-top: -200px;
+  padding-left: 100px;
+}
+
+.fourth {
+  height: 400px;
+  width: 400px;
+  animation: showreel-hover 1s infinite ease-in-out;
+  top:40px;
+}
+
+.animation5 {
+  position:absolute;
+  margin-top: -400px;
+  padding-left: 60px;
+}
+
+.fifth {
+  height: 400px;
+  width: 400px;
+  animation: showreel-hover 2s infinite ease-in-out;
+  top:40px;
+}
+
+.animation6 {
+  position: absolute;
+  margin-top: -270px;
+  padding-left: 10px;
+}
+
+.sixth {
+  height: 300px;
+  width: 300px;
+  animation: showreel-hover 1.6s infinite ease-in-out;
+  top:40px;
+}
+
+.to-do {
+  z-index: 999;
+  position: relative;
+  margin-top: 140px;
+  height: 700px;
+  width: 800px;
+  font-family: GTWalsheimPro;
+  padding-left: 200px;
+  padding-right: 400px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.to-do h3 {
+  font-size: 45px;
+  padding-top: 20px;
+  font-family:GTWalsheimPro-Medium;
+  letter-spacing: 3px;
+}
+
+.to-do p {
+  font-size: 36px;
+  padding-top: 20px;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+
+.to-do a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.to-do a:visited {
+  color: #CCB49C;
+}
+
+.to-read {
+  background: url('../img/toRead.svg')no-repeat bottom right;
+  position: relative;
+  width: 100%;
+  height: 900px;
+  font-family: GTWalsheimPro;
+  margin-top: -200px;
+}
+
+.to-read h3{
+  font-family: GTWalsheimPro-Medium;
+  font-size: 45px;
+  padding-top: 450px;
+  padding-left: 150px;
+}
+
+.to-read p {
+  font-size: 36px;
+  padding-top: 25px;
+  padding-left: 150px;
+  padding-right: 600px;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+
+.to-read a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.to-read a:visited {
+  color: #CCB49C;
+}
+
+.animation7 {
+  position:absolute;
+  right: 120px;
+  margin-top: -200px;
+}
+
+.seventh {
+  height: 300px;
+  width: 300px;
+  animation: showreel-hover 2s infinite ease-in-out;
+  top:40px;
+}
+
+.animation8 {
+  position:absolute;
+  margin-top: -450px;
+  padding-left: 1100px;
+}
+
+.eight {
+  height: 300px;
+  width: 300px;
+  animation: showreel-hover 0.5s infinite ease-in-out;
+  top:40px;
+}
+
+.animation9 {
+  position:absolute;
+  margin-top: -350px;
+  padding-left: 950px;
+}
+
+.ninth {
+  height: 150px;
+  width: 150px;
+  animation: showreel-hover 1s infinite ease-in-out;
+  top:40px;
+}
+
+.animation10 {
+  position:absolute;
+  padding-left: 750px;
+}
+
+.tenth {
+  height: 300px;
+  width: 300px;
+  animation: showreel-hover 1.2s infinite ease-in-out;
+  top:40px;
+}
+
+.to-go {
+  background: url('../img/toGo.svg')no-repeat bottom left;
+  background-position: 200px 0px;
+  height: 750px;
+  position: relative;
+  font-family: GTWalsheimPro;
+  text-align: right;
+  padding-top: 250px;
+  padding-left: 620px;
+  padding-right: 100px;
+}
+
+.to-go h3 {
+  font-family: GTWalsheimPro-Medium;
+  font-size: 45px;
+  padding-top: 30px;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+
+.to-go p {
+  font-size: 36px;
+  padding-top: 25px;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+
+.to-go a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.to-go a:visited {
+  color: #CCB49C;
+}
+
+.to-develop {
+  background: url(../img/toDevelop.svg)no-repeat bottom right;
+  height: 770px;
+  font-family: GTWalsheimPro;
+  text-align: right;
+  color: #fff;
+}
+
+.to-develop h3 {
+  font-family: GTWalsheimPro-Medium;
+  font-size: 45px;
+  padding-top: 160px;
+  padding-right: 500px;
+  padding-left: 450px;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+
+.to-develop p {
+  font-size: 36px;
+  padding-top: 25px;
+  padding-right: 500px;
+  padding-left: 450px;
+  padding-top: 30px;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+
+.animation11 {
+  position: absolute;
+  margin-top: -250px;
+  padding-left: 70px;
+  padding-top: 150px;
+}
+
+.eleventh {
+  height: 400px;
+  width: 400px;
+  animation: showreel-hover 1s infinite ease-in-out;
+  top: 40px;
+}
+
+.animation12 {
+  position: absolute;
+  margin-top: -620px;
+  padding-left: 1000px;
+}
+
+.twelve {
+  height: 300px;
+  width: 300px;
+  animation: showreel-hover 1s infinite ease-in-out;
+  top: 40px;
+}
+
+.animation13 {
+  position: absolute;
+  padding-left: 1100px;
+  margin-top: -300px;
+}
+
+.thirteen {
+  height: 250px;
+  width: 250px;
+  animation: showreel-hover 1.2s infinite ease-in-out;
+  top: 40px;
+}
+
+.toTake {
+  background: url('../img/toTake.svg') no-repeat bottom right;
+  width: 450px;
+  height: 450px;
+  padding-left: 535px;
+  margin-top: -135px;
+}
+
+.ellipse2 {
+  background: url('../img/ellipse2.svg') no-repeat center left;
+  position: relative;
+  height: 780px;
+  width: 780px;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.ellipse2 h3 {
+  font-family: GTWalsheimPro-Medium;
+  font-size: 40px;
+  padding-left: 230px;
+  padding-top: 130px;
+  padding-bottom: 20px;
+  color: #fff;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+
+.ellipse2 p {
+  font-family: GTWalsheimPro;
+  font-size: 36px;
+  padding-top: 20px;
+  padding-left: 175px;
+  padding-right: 100px;
+  color: #ffff;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+
+.other-to-take {
+  background: url('../img/toTake2.svg') no-repeat center;
+  height: 900px;
+  font-family: GTWalsheimPro;
+  text-align: right;
+  color: #fff;
+  margin-top: -270px;
+}
+
+.other-to-take p {
+  font-size: 36px;
+  padding-top: 280px;
+  padding-right: 200px;
+  padding-left: 640px;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+
+.animation14 {
+  position: absolute;
+  padding-left: 150px;
+  margin-top: -300px;
+}
+
+.fourteen {
+  height: 250px;
+  width: 250px;
+  animation: showreel-hover 0.8s infinite ease-in-out;
+  top: 40px;
+}
+
+.animation15 {
+  position: absolute;
+  padding-left: 500px;
+}
+
+.fifteen {
+  height: 100px;
+  width: 100px;
+  animation: showreel-hover 1.5s infinite ease-in-out;
+  top: 40px;
+}
+
+.animation16 {
+  position: absolute;
+  padding-left: 400px;
+  margin-top: 100px;
+}
+
+.sixteen {
+  height: 100px;
+  width: 100px;
+  animation: showreel-hover 2s infinite ease-in-out;
+  top: 40px;
+}
+
+.animation17 {
+  position: absolute;
+  padding-left: 550px;
+  margin-top: 140px;
+}
+
+.seventeen {
+  height: 100px;
+  width: 100px;
+  animation: showreel-hover 1.7s infinite ease-in-out;
+  top: 40px;
+}
+
+.animation18 {
+  position: absolute;
+  padding-left: 90px;
+  margin-top: 130px;
+}
+
+.eighteen {
+  height: 250px;
+  width: 250px;
+  animation: showreel-hover 0.7s infinite ease-in-out;
+  top: 40px;
+}
+
+.to-think {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  top: -15px;
+  background-color: #D0E5D3;
+  padding-left: 70px;
+  padding-right: 70px;
+  color: #000000;
+  margin: 0 auto;
+}
+
+.to-think h3 {
+  font-family: GTWalsheimPro-Medium;
+  font-size: 45px;
+  padding-top: 120px;
+  padding-left: 20px;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+
+.to-think p {
+  font-family: GTWalsheimPro;
+  font-size: 36px;
+  padding-top: 20px;
+  padding-left: 20px;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+
+.to-think a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.to-think a:visited {
+  color: #CCB49C;
+}
+
+.and-next {
+  background: url('../img/andNext.svg') no-repeat center;
+  height: 999px;
+  font-family: GTWalsheimPro;
+  color: #fff;
+}
+
+.and-next h3 {
+  font-size: 45px;
+  padding-top: 330px;
+  padding-left: 200px;
+  margin-bottom: 30px;
+  letter-spacing: 0.4px;
+}
+
+.and-next p {
+  font-size: 36px;
+  padding-top: 35px;
+  padding-left: 200px;
+  padding-right: 600px;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+
+.animation19 {
+  position:absolute;
+  margin-top: -650px;
+  padding-left: 1100px;
+}
+
+.nineteen {
+  height: 150px;
+  width: 150px;
+  animation: showreel-hover 2s infinite ease-in-out;
+  top: 40px;
+}
+
+.animation20 {
+  position:absolute;
+  margin-top: -550px;
+  padding-left: 850px;
+}
+
+.twenty {
+  height: 250px;
+  width: 250px;
+  animation: showreel-hover 0.5s infinite ease-in-out;
+  top:40px;
+}
+
+.animation21 {
+  position:absolute;
+  margin-top: -400px;
+  padding-left: 1100px;
+}
+
+.twentyOne {
+  height: 150px;
+  width: 150px;
+  animation: showreel-hover 1s infinite ease-in-out;
+  top:40px;
+}
+
+.animation22 {
+  position:absolute;
+  margin-top: -240px;
+  padding-left: 800px;
+}
+
+.twentyTwo {
+  height: 250px;
+  width: 250px;
+  animation: showreel-hover 1.2s infinite ease-in-out;
+  top:40px;
+}
+
+@keyframes showreel-hover {
+ 0% {
+   transform: translateY(0px);
+ }
+ 50% {
+  transform: translateY(10px);
+ }
+ 100% {
+   transform: translateY(0);
+ }
